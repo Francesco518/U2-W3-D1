@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #pet-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #petName {
+        margin-top: 30px;
+      }
+      button {
+        width: 10%;
+        padding: 17px;
+        margin-top: 10px;
+        background-color: rgb(117, 214, 117);
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 25px;
+        box-shadow: 13px 8px 8px 4px #42c71678;
+      }
+      ul {
+        background-color: black;
+        color: white;
+        width: 25%;
+      }
+      body {
+        background-image: url(https://lh3.googleusercontent.com/er09QWAhE9RNtUQDShBup5yLnf9zC6QN-rUVM9zi4ZPzDMcOjZZ3sVj9HQbheYY8h2omHsCk-SWU=w1440-ns-nd-rj);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+      }
+      .Text {
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="pet-form">
+      <label for="petName" class="Text">Pet Name</label>
+      <input type="text" id="petName" name="petName" required />
+      <label for="ownerName" class="Text">Owner Name</label>
+      <input type="text" id="ownerName" name="ownerName" required />
+      <label for="species" class="Text">Species</label>
+      <input type="text" id="species" name="species" required />
+      <label for="breed" class="Text">Breed</label>
+      <input type="text" id="breed" name="breed" required />
+      <button type="submit">Add Pet</button>
+      <button type="reset">Reset Data</button>
+    </form>
+    <h1>Pet Chosen</h1>
+    <ul id="pet-list"></ul>
+    <button id="reset-button">Reset</button>
+    <script src="./test.js"></script>
+    <script src="./pet.js"></script>
+  </body>
+</html>
